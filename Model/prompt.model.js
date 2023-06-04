@@ -2,8 +2,6 @@ const mongoose = require("mongoose");
 
 const TextSchema = mongoose.Schema(
   {
-    imageUrl: { type: String, required: true },
-    imageAlt: String,
     promptName: { type: String, required: true },
     promptType: { type: String, required: true },
     promptDescription: { type: String, required: true },
@@ -16,8 +14,6 @@ const TextSchema = mongoose.Schema(
 );
 
 const ImageSchema = mongoose.Schema({
-  imageUrl: { type: String, required: true },
-  imageAlt: String,
   promptName: { type: String, required: true },
   promptType: { type: String, required: true },
   promptDescription: { type: String, required: true },

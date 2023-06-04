@@ -22,7 +22,7 @@ const ImageSchema = mongoose.Schema({
   promptType: { type: String, required: true },
   promptDescription: { type: String, required: true },
   originalPrompt: { type: String, required: true },
-  exampleOutput: { type: [String], required: true },
+  exampleOutput: String,
 });
 
 const ChatGptModel = mongoose.model("chatgpt", TextSchema);
